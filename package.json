@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-repo",
+  "version": "1.0.0",
+  "description": "Primer proyecto de Node js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://andypiriz@bitbucket.org/andypiriz/bootstrap-repo.git"
+  },
+  "author": "Andrea Piriz",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/andypiriz/bootstrap-repo#readme"
+}
