@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     <title>Guía de Hoteles</title>
 </head>
 
@@ -21,14 +23,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./condiciones.html">Términos y condiciones</a>
+                    <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item  active">
+                    <a class="nav-link" href="#">Términos y condiciones</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -40,29 +42,27 @@
         <h1>HOTELES</h1>
     </div>
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
-            </ol>
-        </nav>
-        <h3>Sobre Nosotros</h3>
-        <span>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ornare sollicitudin, urna senectus habitant
-            parturient netus tempor porta felis. Malesuada et libero in pharetra mi semper ridiculus natoque auctor at
-            lacus, himenaeos praesent vulputate ultricies quam mattis hac eros proin vivamus pulvinar per, aptent ligula
-            dictumst nullam vitae rutrum tincidunt tellus eleifend potenti. Blandit donec mattis potenti lacus lacinia
-            morbi phasellus diam, augue etiam erat tempor accumsan fermentum sociosqu varius vulputate, ut duis fusce
-            mauris dignissim eros lobortis.
-        </span>
-        <br>
-        <span>
-            Cursus pellentesque tortor mattis libero litora sociosqu ligula tristique fringilla eleifend, arcu purus
-            blandit inceptos curae sollicitudin porttitor odio. Metus sodales conubia egestas neque pretium feugiat
-            viverra nostra augue, fringilla dis nisl taciti nibh ridiculus sagittis auctor. Felis maecenas erat aliquam
-            vestibulum eleifend malesuada convallis, ultricies metus orci dictumst euismod conubia diam dis, laoreet
-            vivamus vitae ridiculus purus facilisi.
-        </span>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Términos y condiciones</li>
+                </ol>
+            </nav>
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit ornare sollicitudin, urna senectus habitant
+                parturient netus tempor porta felis. Malesuada et libero in pharetra mi semper ridiculus natoque auctor
+                at
+                lacus, himenaeos praesent vulputate ultricies quam mattis hac eros proin vivamus pulvinar per, aptent
+                ligula
+                dictumst nullam vitae rutrum tincidunt tellus eleifend potenti. Blandit donec mattis potenti lacus
+                lacinia
+                morbi phasellus diam, augue etiam erat tempor accumsan fermentum sociosqu varius vulputate, ut duis
+                fusce
+                mauris dignissim eros lobortis.
+            </span>
+
+        </div>
     </div>
     <footer>
         <div class="row">
@@ -75,9 +75,9 @@
             <div class="col-sm-4">
                 <address>
                     <h4>Oficina Central</h4>
-                    <p>Maldonado 666, Montevideo, Uruguay.</p>
-                    <p>+59822445566</p>
-                    <p>contacto@guiadehoteles.com</p>
+                    <p><span class="oi oi-home footer-adress-icon"></span>Maldonado 666, Montevideo, Uruguay.</p>
+                    <p><span class="oi oi-phone footer-adress-icon"></span>+59822445566</p>
+                    <p><span class="oi oi-envelope-closed footer-adress-icon"></span>contacto@guiadehoteles.com</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
