@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <title>Guía de Hoteles</title>
 </head>
 
@@ -24,11 +25,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="./index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./precios.html">Precios</a>
+                    <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Precios</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./condiciones.html">Términos y condiciones</a>
@@ -46,26 +47,73 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        <h3>Sobre Nosotros</h3>
-        <span>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ornare sollicitudin, urna senectus habitant
-            parturient netus tempor porta felis. Malesuada et libero in pharetra mi semper ridiculus natoque auctor at
-            lacus, himenaeos praesent vulputate ultricies quam mattis hac eros proin vivamus pulvinar per, aptent ligula
-            dictumst nullam vitae rutrum tincidunt tellus eleifend potenti. Blandit donec mattis potenti lacus lacinia
-            morbi phasellus diam, augue etiam erat tempor accumsan fermentum sociosqu varius vulputate, ut duis fusce
-            mauris dignissim eros lobortis.
-        </span>
-        <br>
-        <span>
-            Cursus pellentesque tortor mattis libero litora sociosqu ligula tristique fringilla eleifend, arcu purus
-            blandit inceptos curae sollicitudin porttitor odio. Metus sodales conubia egestas neque pretium feugiat
-            viverra nostra augue, fringilla dis nisl taciti nibh ridiculus sagittis auctor. Felis maecenas erat aliquam
-            vestibulum eleifend malesuada convallis, ultricies metus orci dictumst euismod conubia diam dis, laoreet
-            vivamus vitae ridiculus purus facilisi.
-        </span>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <th>Calificación</th>
+                    <th>Montevideo</th>
+                    <th>Punta del Diablo</th>
+                    <th>La Pedrera</th>
+                    <th>La Paloma</th>
+                    <th>Cabo Polonio</th>
+                </thead>
+                <tbody>
+                    <tr class="table-danger">
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$250</td>
+                        <td>$270</td>
+                        <td>$300</td>
+                        <td>$350</td>
+                        <td>$390</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$270</td>
+                        <td>$290</td>
+                        <td>$320</td>
+                        <td>$370</td>
+                        <td>$410</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$290</td>
+                        <td>$320</td>
+                        <td>$350</td>
+                        <td>$400</td>
+                        <td>$460</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                            <span class="oi oi-star"></span>
+                        </td>
+                        <td>$370</td>
+                        <td>$430</td>
+                        <td>$470</td>
+                        <td>$530</td>
+                        <td>$570</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <footer>
         <div class="row">
