@@ -52,15 +52,15 @@
         </nav>
         <div class="row">
             <div class="col">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#funciona"
+                <button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#funciona"
                     aria-controls="multiCollpase1">¿Cómo funciona?</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#reserva"
+                <button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#reserva"
                     aria-controls="multiCollpase2">¿Cómo reservo?</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#pago"
+                <button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#pago"
                     aria-controls="multiCollpase3">¿Cómo pago?</button>
             </div>
         </div>
@@ -97,10 +97,12 @@
                     <h5 class="card-title">Hotel Uruguay</h5>
                     <h6 class="card-subtitle text-muted">Montevideo</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"
-                            style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
+                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
@@ -110,10 +112,12 @@
                     <h5 class="card-title">Hotel Argentina</h5>
                     <h6 class="card-subtitle text-muted">Punta del Este</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"
-                            style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
+                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
@@ -123,10 +127,12 @@
                     <h5 class="card-title">Hotel Brasil</h5>
                     <h6 class="card-subtitle text-muted">Cabo Polonio</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"
-                            style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
+                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
@@ -136,10 +142,12 @@
                     <h5 class="card-title">Hotel Paraguay</h5>
                     <h6 class="card-subtitle text-muted">La Paloma</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"
-                            style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
+                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
@@ -149,15 +157,97 @@
                     <h5 class="card-title">Hotel Ecuador</h5>
                     <h6 class="card-subtitle text-muted">La Pedrera</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-bookmark"
-                            style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
+                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contactar al hotel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Ingresa tu email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text" cols="30" rows="10"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-reserva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Concreta tu reserva</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="checkIn" class="col-form-label">Check-in</label>
+                                    <input type="date" class="form-control" id="checkIn">
+
+                                </div>
+                                <div class="form-group col">
+                                    <label for="checkOut" class="col-form-label">Check-out</label>
+                                    <input type="date" class="form-control" id="checkOut">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="adultos" class="col-form-label">Adultos:</label>
+                                    <input type="number" min="1" value="1" class="form-control" id="adultos">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="niños" class="col-form-label">Niños:</label>
+                                    <input type="number" min="0" value="0" class="form-control" id="niños">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="habitaciones" class="col-form-label">Habitaciones:</label>
+                                    <input type="number" min="1" value="1" class="form-control" id="habitaciones">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="porTrabajo" class="col-form-label">Viajo por trabajo:</label>
+                                    <input type="checkbox" class="form-control" id="porTrabajo">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
