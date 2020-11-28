@@ -132,16 +132,57 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header" style="background-color: rgb(22, 88, 22); color: white;">
-                            <span class="oi oi-credit-card"></span> Tarjetas aceptadas</div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-success">Visa</li>
-                            <li class="list-group-item list-group-item-success">Master Card</li>
-                            <li class="list-group-item list-group-item-success">Maestro</li>
-                            <li class="list-group-item list-group-item-success">Oca</li>
-                        </ul>
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne" style="background-color: rgb(195, 236, 154);">
+                            <h5 class="mb-0">
+                                <button type="button" class="btn btn-link" data-toggle="collapse"
+                                    data-target="#collapseVisa" aria-expanded="true" aria-controls="collapseVisa">
+                                    VISA
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseVisa" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo" style="background-color: rgb(195, 236, 154);">
+                            <h5 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseMaster" aria-expanded="false" aria-controls="collapseMaster">
+                                    MASTER
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseMaster" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                3 wolf moon officia aute, non cupidatat skateboard dolor brunch
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree" style="background-color: rgb(195, 236, 154);">
+                            <h5 class="mb-0">
+                                <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseMaestro" aria-expanded="false"
+                                    aria-controls="collapseMaestro">
+                                    MAESTRO
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseMaestro" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
