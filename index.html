@@ -109,7 +109,8 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="car-img-top" src="img/playa2.png" alt="hotel img">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Argentina</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Las primeras 5 reservas cuentan con un tour gratuito por la ciudad">Hotel Argentina</h5>
                     <h6 class="card-subtitle text-muted">Punta del Este</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                     <button type="button" class="btn btn-outline-success" data-toggle="modal"
@@ -131,15 +132,17 @@
                         data-target="#contacto">Contactar</button>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"
-                        data-target="#modal-reserva"><span class="oi oi-bookmark" style="color: green"></span>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover"
+                        data-content="Consultá las promociones" data-placement="top"><span class="oi oi-bookmark"
+                            style="color: green"></span>
                         Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="car-img-top" src="img/playa2.png" alt="hotel img">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Paraguay</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Contamos con paseos a caballo">Hotel Paraguay</h5>
                     <h6 class="card-subtitle text-muted">La Paloma</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                     <button type="button" class="btn btn-outline-success" data-toggle="modal"
@@ -276,8 +279,15 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+        });
+    </script>
 
 </body>
 
