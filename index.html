@@ -117,7 +117,7 @@
                     <h5 class="card-title">Hotel Uruguay</h5>
                     <h6 class="card-subtitle text-muted">Montevideo</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" id="contactarBTN"
                         data-target="#contacto">Contactar</button>
                 </div>
                 <div>
@@ -309,6 +309,24 @@
             $('.carousel').carousel({
                 interval: 3000
             });
+
+            $('#contacto').on('show.bs.modal', function (e) {
+                console.log('El modal de contacto se está mostrando');
+
+                $('#contactarBTN').removeClass('btn-outline-success');
+                $('#contactarBTN').addClass('btn-primary');
+                $('#contactarBTN').prop('disabled', true);
+
+            });
+            $('#contacto').on('shown.bs.modal', function (e) {
+                console.log('El modal de contacto se mostró');
+            });
+            $('#contacto').on('hide.bs.modal', function (e) {
+                    console.log('El modal de contacto se oculta');
+                }),
+                $('#contacto').on('hidden.bs.modal', function (e) {
+                    console.log('El modal de contacto se ocultó');
+                });
         });
     </script>
 
