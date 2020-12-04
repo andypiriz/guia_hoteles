@@ -12,14 +12,14 @@ $dark_green_water:#095c56;
 .jumbotron {
     background-color: $green_water;
     color: black;
-    @include margenes(30px, 0px);
+    @include margenes(30px, 10px);
 
 }
 
 footer {
     padding: 10px 10px 0px 10px;
     background-color: $green_water;
-    @include margenes(15px, 0px);
+    @include margenes(60px, 0px);
 
 }
 
