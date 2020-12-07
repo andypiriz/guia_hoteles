@@ -8,9 +8,9 @@ $(function () {
             $('#contacto').on('show.bs.modal', function (e) {
                 console.log('El modal de contacto se está mostrando');
 
-                $('#contactarBTN').removeClass('btn-outline-success');
-                $('#contactarBTN').addClass('btn-primary');
-                $('#contactarBTN').prop('disabled', true);
+                $('.contactarBTN').removeClass('btn-outline-success');
+                $('.contactarBTN').addClass('btn-primary');
+                $('.contactarBTN').prop('disabled', true);
 
             });
             $('#contacto').on('shown.bs.modal', function (e) {
