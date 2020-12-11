@@ -21,5 +21,6 @@ $(function () {
                 }),
                 $('#contacto').on('hidden.bs.modal', function (e) {
                     console.log('El modal de contacto se ocultó');
+                    $('.contactarBTN').prop('disabled', false);
                 });
         });
